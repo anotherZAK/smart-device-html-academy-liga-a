@@ -1,0 +1,79 @@
+.smart-device-info__description {
+  position: relative;
+  min-width: 718px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 713px;
+    height: 655px;
+    top: -200px;
+    left: 700px;
+    background-image: url("../img/png/bg-circuit-board-desktop@1x.png");
+  }
+}
+
+.smart-device-info__description h1 {
+  margin: 0;
+  margin-bottom: 31px;
+  font-family: $second-font;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.smart-device-info__description p {
+  position: relative;
+  margin: 0;
+  margin-bottom: 37px;
+  padding-left: 94px;
+  color: #ffffff;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 66px;
+    height: 2px;
+    top: 10px;
+    left: 0;
+    background-color: #ffffff;
+  }
+}
+
+.smart-device-info__link {
+  color: #ffffff;
+
+  &--consult {
+    margin-left: 93px;
+    padding-top: 17px;
+    padding-right: 28px;
+    padding-bottom: 14px;
+    padding-left: 28px;
+    font-family: $second-font;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background-color: #00b2ff;
+    border-radius: 5px;
+  }
+
+  &--downscroll {
+    position: absolute;
+    top: 400px;
+    left: 40px;
+    transform: rotate(270deg);
+    opacity: 0.5;
+  }
+}
+
+.smart-device-info__gallery img {
+  position: relative;
+  top: -200px;
+  left: 0;
+}
