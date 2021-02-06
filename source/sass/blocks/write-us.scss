@@ -1,0 +1,52 @@
+.write-us {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 120px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    right: 600px;
+    top: 100px;
+    width: 686px;
+    height: 487px;
+    background-image: url("../img/png/bg-airplane-desktop@1x.png");
+  }
+}
+
+.write-us h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: $second-font;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+}
+
+.write-us p {
+  margin: 0;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+@media (max-width: $tablet-width) {
+  .write-us {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 120px;
+  
+    &::before {
+      content: none;
+    }
+  }
+
+  .write-us h3 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .write-us h3 {
+    font-size: 28px;
+  }
+}
