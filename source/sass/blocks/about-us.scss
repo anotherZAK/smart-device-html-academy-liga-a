@@ -1,0 +1,80 @@
+.about-us {
+  position: relative;
+  margin-bottom: 100px;
+  padding-left: 190px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 242px;
+    height: 362px;
+    background-image: url("../../img/png/bg-company-2005-all-res.png");
+  }
+}
+
+.about-us h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: $second-font;
+  font-size: 36px;
+  line-height: 51px;
+  color: #666666;
+}
+
+.about-us p {
+  margin: 0;
+  margin-bottom: 20px;
+  max-width: 1000px;
+}
+
+.about-us__more-link {
+  padding-top: 14px;
+  padding-right: 30px;
+  padding-bottom: 14px;
+  padding-left: 30px;
+  font-family: $second-font;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #00b2ff;
+  border: 1px solid #00b2ff;
+  border-radius: 5px;
+}
+
+.about-us__info-tablet {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .about-us h2 {
+    font-size: 32px;
+  }
+
+  .about-us__info-desktop {
+    display: none;
+  }
+
+  .about-us__info-tablet {
+    display: inline;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about-us {
+    position: relative;
+    margin-bottom: 100px;
+    padding-left: 0;
+  
+    &::before {
+      content: none;
+    }
+  }
+
+  .about-us h2 {
+    font-size: 38px;
+  }
+}
