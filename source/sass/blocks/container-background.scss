@@ -22,3 +22,14 @@
     }
   }
 }
+
+@media (max-width: $mobile-width) {
+  .container-background {
+    height: 670px;
+    background-image: url("../img/png/bg-header-mobile@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/png/bg-header-mobile@1x.png");
+    }
+  }
+}

@@ -77,3 +77,28 @@
   fill: none;
   stroke: #00b2ff;
 }
+
+@media (max-width: $tablet-width) {
+  .main-nav__item {
+    margin-right: 20px;
+  }
+
+  .main-nav__link-blink,
+  .main-nav__link--callback {
+    display: none;
+  }
+
+  .main-nav__icon {
+    left: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-nav__logo {
+    min-width: fit-content;
+  }
+  
+  .main-nav__logo div {
+    display: none;
+  }
+}

@@ -1,15 +1,35 @@
 .smart-device-info__description {
   position: relative;
-  min-width: 718px;
+  margin: 0 auto;
+  // min-width: 718px;
+  max-width: 1411px;
 
+  &::before,
   &::after {
     position: absolute;
     content: "";
-    width: 713px;
-    height: 655px;
+  }
+
+  &::before {
+    width: 705px;
+    height: 641px;
     top: -200px;
     left: 700px;
-    background-image: url("../img/png/bg-circuit-board-desktop@1x.png");
+    background-image: url("../../img/svg/bg-triangle-desktop.svg");
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    width: 705px;
+    height: 515px;
+    top: -100px;
+    left: 700px;
+    background-image: url("../img/png/bg-circuit-board-all-res@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/png/bg-circuit-board-all-res@2x.png");
+      background-size: 705px 515px;
+    }
   }
 }
 
@@ -30,6 +50,9 @@
   margin: 0;
   margin-bottom: 37px;
   padding-left: 94px;
+  max-width: 750px;
+  font-size: 22px;
+  line-height: 34px;
   color: #ffffff;
 
   &::after {
@@ -76,4 +99,128 @@
   position: relative;
   top: -200px;
   left: 0;
+}
+
+.smart-device-info__link-mobile {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .smart-device-info__description {
+    &::before {
+      width: 605px;
+      height: 541px;
+      top: -200px;
+      left: 700px;
+      background-image: url("../../img/svg/bg-triangle-desktop.svg");
+      background-repeat: no-repeat;
+      background-size: 465px 340px;
+    }
+  
+    &::after {
+      width: 465px;
+      height: 340px;
+      top: -100px;
+      left: 500px;
+      background-image: url("../img/png/bg-circuit-board-all-res@1x.png");
+  
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/png/bg-circuit-board-all-res@2x.png");
+        background-size: 465px 340px;
+      }
+    }
+  }
+
+  .smart-device-info__description h1 {
+    max-width: 75%;
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .smart-device-info__description p {
+    margin-bottom: 37px;
+    padding-left: 64px;
+    max-width: 68%;
+    font-size: 18px;
+    line-height: 28px;
+
+    &::after {
+      width: 33px;
+      height: 2px;
+    }
+  }
+
+  .smart-device-info__link {
+    color: #ffffff;
+
+    &--consult {
+      margin-left: 63px;
+      padding-right: 14px;
+      padding-left: 14px;
+    }
+
+    &--downscroll {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .smart-device-info__description {
+    &::before {
+      width: 605px;
+      height: 541px;
+      top: -200px;
+      left: 700px;
+      background-image: url("../../img/svg/bg-triangle-desktop.svg");
+      background-repeat: no-repeat;
+      background-size: 465px 340px;
+    }
+  
+    &::after {
+      width: 301px;
+      height: 220px;
+      top: -200px;
+      left: 0;
+      background-image: url("../img/png/bg-circuit-board-all-res@1x.png");
+  
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/png/bg-circuit-board-all-res@2x.png");
+        background-size: 301px 220px;
+      }
+    }
+  }
+
+  .smart-device-info__description h1 {
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .smart-device-info__description p {
+    max-width: 90%;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .smart-device-info__link {
+    color: #ffffff;
+
+    &--consult {
+      margin-left: 0;
+      padding-right: 11px;
+      padding-left: 11px;
+    }
+
+    &--downscroll {
+      display: none;
+    }
+  }
+
+  .smart-device-info__link-tablet {
+    display: none;
+  }
+
+  .smart-device-info__link-mobile {
+    display: inline;
+  }
 }
