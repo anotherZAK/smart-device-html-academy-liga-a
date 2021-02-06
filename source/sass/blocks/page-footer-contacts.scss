@@ -1,0 +1,28 @@
+.page-footer-contacts h2 {
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1b2d37;
+}
+
+.page-footer-contacts__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0;
+  height: 50%;
+  list-style: none;
+}
+
+.page-footer-contacts__item {
+  margin-bottom: 10px;
+}
+
+.page-footer-contacts__item,
+.page-footer-contacts__link {
+  font-size: 15px;
+  line-height: 25px;
+  color: #1b2d37;
+  opacity: 0.5;
+}

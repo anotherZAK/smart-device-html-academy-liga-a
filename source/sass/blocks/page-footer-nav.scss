@@ -1,0 +1,33 @@
+.page-footer-nav h2 {
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1b2d37;
+}
+
+.page-footer-nav__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0;
+  height: 50%;
+  list-style: none;
+}
+
+.page-footer-nav__item {
+  margin-bottom: 10px;
+}
+
+.page-footer-nav__link {
+  font-size: 15px;
+  line-height: 25px;
+  color: #1b2d37;
+  opacity: 0.5;
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer-nav__list {
+    height: 100%;
+  }
+}

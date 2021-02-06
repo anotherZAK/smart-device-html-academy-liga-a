@@ -1,0 +1,25 @@
+.page-footer-rights {
+  grid-column: 1/-1;
+}
+
+.page-footer-rights__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.page-footer-rights__item {
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1b2d37;
+  opacity: 0.5;
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer-rights__blink {
+    display: none;
+  }
+}

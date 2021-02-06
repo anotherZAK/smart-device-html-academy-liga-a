@@ -60,11 +60,18 @@ img {
 .smart-device-info__description {
   position: relative;
   margin: 0 auto;
-  min-width: 718px;
   max-width: 1411px; }
-  .smart-device-info__description::after {
+  .smart-device-info__description::before, .smart-device-info__description::after {
     position: absolute;
-    content: "";
+    content: ""; }
+  .smart-device-info__description::before {
+    width: 705px;
+    height: 641px;
+    top: -200px;
+    left: 700px;
+    background-image: url("../../img/svg/bg-triangle-desktop.svg");
+    background-repeat: no-repeat; }
+  .smart-device-info__description::after {
     width: 705px;
     height: 515px;
     top: -100px;
@@ -134,11 +141,22 @@ img {
   top: -200px;
   left: 0; }
 
+.smart-device-info__link-mobile {
+  display: none; }
+
 @media (max-width: 1023px) {
+  .smart-device-info__description::before {
+    width: 605px;
+    height: 541px;
+    top: -200px;
+    left: 700px;
+    background-image: url("../../img/svg/bg-triangle-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 465px 340px; }
   .smart-device-info__description::after {
     width: 465px;
     height: 340px;
-    top: -200px;
+    top: -100px;
     left: 500px;
     background-image: url("../img/png/bg-circuit-board-all-res@1x.png"); } }
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
@@ -148,28 +166,67 @@ img {
 
 @media (max-width: 1023px) {
   .smart-device-info__description h1 {
+    max-width: 75%;
     font-size: 60px;
     line-height: 70px; }
   .smart-device-info__description p {
     margin-bottom: 37px;
     padding-left: 64px;
-    max-width: 500px;
+    max-width: 68%;
     font-size: 18px;
     line-height: 28px; }
     .smart-device-info__description p::after {
-      position: absolute;
-      content: "";
       width: 33px;
-      height: 2px;
-      top: 10px;
-      left: 0;
-      background-color: #ffffff; }
+      height: 2px; }
   .smart-device-info__link {
     color: #ffffff; }
     .smart-device-info__link--consult {
-      margin-left: 63px; }
+      margin-left: 63px;
+      padding-right: 14px;
+      padding-left: 14px; }
     .smart-device-info__link--downscroll {
       display: none; } }
+
+@media (max-width: 767px) {
+  .smart-device-info__description::before {
+    width: 605px;
+    height: 541px;
+    top: -200px;
+    left: 700px;
+    background-image: url("../../img/svg/bg-triangle-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 465px 340px; }
+  .smart-device-info__description::after {
+    width: 301px;
+    height: 220px;
+    top: -200px;
+    left: 0;
+    background-image: url("../img/png/bg-circuit-board-all-res@1x.png"); } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+    .smart-device-info__description::after {
+      background-image: url("../img/png/bg-circuit-board-all-res@2x.png");
+      background-size: 301px 220px; } }
+
+@media (max-width: 767px) {
+  .smart-device-info__description h1 {
+    font-size: 40px;
+    line-height: 47px; }
+  .smart-device-info__description p {
+    max-width: 90%;
+    font-size: 16px;
+    line-height: 25px; }
+  .smart-device-info__link {
+    color: #ffffff; }
+    .smart-device-info__link--consult {
+      margin-left: 0;
+      padding-right: 11px;
+      padding-left: 11px; }
+    .smart-device-info__link--downscroll {
+      display: none; }
+  .smart-device-info__link-tablet {
+    display: none; }
+  .smart-device-info__link-mobile {
+    display: inline; } }
 
 .page {
   height: 100%;
@@ -271,6 +328,14 @@ img {
   .main-nav__icon {
     left: 0; } }
 
+@media (max-width: 767px) {
+  .main-nav__logo {
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content; }
+  .main-nav__logo div {
+    display: none; } }
+
 .container-edge {
   margin: 0 auto;
   padding-left: 249px;
@@ -298,5 +363,13 @@ img {
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
     .container-background {
       background-image: url("../img/png/bg-header-tablet@1x.png"); } }
+
+@media (max-width: 767px) {
+  .container-background {
+    height: 670px;
+    background-image: url("../img/png/bg-header-mobile@1x.png"); } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+    .container-background {
+      background-image: url("../img/png/bg-header-mobile@1x.png"); } }
 
 /*# sourceMappingURL=style.css.map */
