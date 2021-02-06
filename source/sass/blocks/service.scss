@@ -1,0 +1,35 @@
+.service {
+  padding-top: 90px;
+  padding-bottom: 120px;
+}
+
+.service p {
+  font-family: $second-font;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+}
+
+.service__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+  padding: 0;
+  max-width: 1170px;
+  list-style: none;
+}
+
+@media (max-width: $tablet-width) {
+  .service p {
+    font-size: 32px;
+  }
+
+  .service__list {
+    display: block;
+  }
+
+  .service__item {
+    margin-bottom: 20px;
+  }
+}

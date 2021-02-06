@@ -1,0 +1,66 @@
+.service-card {
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    bottom: 27px;
+    right: 24px;
+    content: "";
+    width: 9px;
+    height: 2px;
+    background-color: #ffffff;
+    z-index: 2;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    bottom: 32px;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.service-card__link {
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 6px;
+    right: 0;
+    width: 63px;
+    height: 63px;
+    background-color: #00b2ff;
+    z-index: 1;
+    cursor: pointer;
+  }
+}
+
+.service-card h3 {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 50%;
+  font-family: $second-font;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.service-card img {
+  opacity: 0.3;
+}
+
+@media (max-width: $tablet-width) {
+  .service-card img {
+    width: 100%;
+  }
+
+  .service-card h3 {
+    &::after {
+      top: 173px;
+      right: -318px;
+    }
+  }
+}

@@ -228,6 +228,85 @@ img {
   .smart-device-info__link-mobile {
     display: inline; } }
 
+.service-card {
+  position: relative; }
+  .service-card::before, .service-card::after {
+    position: absolute;
+    bottom: 27px;
+    right: 24px;
+    content: "";
+    width: 9px;
+    height: 2px;
+    background-color: #ffffff;
+    z-index: 2; }
+  .service-card::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    bottom: 32px; }
+  .service-card::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+
+.service-card__link::after {
+  position: absolute;
+  content: "";
+  bottom: 6px;
+  right: 0;
+  width: 63px;
+  height: 63px;
+  background-color: #00b2ff;
+  z-index: 1;
+  cursor: pointer; }
+
+.service-card h3 {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 50%;
+  font-family: "Roboto Condensed", "Arial", "sans-serif";
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff; }
+
+.service-card img {
+  opacity: 0.3; }
+
+@media (max-width: 1023px) {
+  .service-card img {
+    width: 100%; }
+  .service-card h3::after {
+    top: 173px;
+    right: -318px; } }
+
+.service {
+  padding-top: 90px;
+  padding-bottom: 120px; }
+
+.service p {
+  font-family: "Roboto Condensed", "Arial", "sans-serif";
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff; }
+
+.service__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
+  padding: 0;
+  max-width: 1170px;
+  list-style: none; }
+
+@media (max-width: 1023px) {
+  .service p {
+    font-size: 32px; }
+  .service__list {
+    display: block; }
+  .service__item {
+    margin-bottom: 20px; } }
+
 .page {
   height: 100%;
   font-family: "PT Mono", "Arial", "sans-serif";
@@ -517,6 +596,9 @@ img {
   .container-edge--advantage {
     padding-left: 18%;
     padding-right: 18%; }
+  .container-edge--service {
+    padding-left: 18%;
+    padding-right: 18%; }
   .container-edge--footer {
     padding-left: 4.4%;
     padding-right: 4.4%; }
@@ -546,6 +628,9 @@ img {
     .container-background--header {
       background-image: url("../img/png/bg-header-desktop@2x.png");
       background-size: cover; } }
+
+.container-background--service {
+  background-color: #1b2d37; }
 
 .container-background--footer {
   background-color: #fafafa; }
@@ -589,12 +674,15 @@ img {
       fill: #ffffff; }
 
 .advantage-card__icon {
+  margin-bottom: 20px;
   fill: #00b2ff;
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1; }
 
 .advantage-card h3 {
+  margin: 0;
+  margin-bottom: 20px;
   font-family: "Roboto Condensed", "Arial", "sans-serif";
   font-size: 24px;
   line-height: 34px;
@@ -611,7 +699,7 @@ img {
     font-size: 20px; } }
 
 .advantage {
-  margin-bottom: 20px; }
+  margin-bottom: 100px; }
 
 .advantage__list {
   display: grid;
@@ -634,5 +722,67 @@ img {
   .advantage__item {
     margin: 0 auto;
     margin-bottom: 20px; } }
+
+.about-us {
+  position: relative;
+  margin-bottom: 100px;
+  padding-left: 190px; }
+  .about-us::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 242px;
+    height: 362px;
+    background-image: url("../../img/png/bg-company-2005-all-res.png"); }
+
+.about-us h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "Roboto Condensed", "Arial", "sans-serif";
+  font-size: 36px;
+  line-height: 51px;
+  color: #666666; }
+
+.about-us p {
+  margin: 0;
+  margin-bottom: 20px;
+  max-width: 1000px; }
+
+.about-us__more-link {
+  padding-top: 14px;
+  padding-right: 30px;
+  padding-bottom: 14px;
+  padding-left: 30px;
+  font-family: "Roboto Condensed", "Arial", "sans-serif";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #00b2ff;
+  border: 1px solid #00b2ff;
+  border-radius: 5px; }
+
+.about-us__info-tablet {
+  display: none; }
+
+@media (max-width: 1023px) {
+  .about-us h2 {
+    font-size: 32px; }
+  .about-us__info-desktop {
+    display: none; }
+  .about-us__info-tablet {
+    display: inline; } }
+
+@media (max-width: 767px) {
+  .about-us {
+    position: relative;
+    margin-bottom: 100px;
+    padding-left: 0; }
+    .about-us::before {
+      content: none; }
+  .about-us h2 {
+    font-size: 38px; } }
 
 /*# sourceMappingURL=style.css.map */
