@@ -1,0 +1,29 @@
+.advantage {
+  margin-bottom: 20px;
+}
+
+.advantage__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 30px;
+  column-gap: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.advantage__item {
+  max-width: 570px;
+  border: 1px solid #ebebeb;
+  border-left: 3px solid #00b2ff;
+}
+
+@media (max-width: $mobile-width) {
+  .advantage__list {
+    display: block;
+  }
+
+  .advantage__item {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
