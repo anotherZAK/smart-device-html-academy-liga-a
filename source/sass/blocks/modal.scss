@@ -1,0 +1,29 @@
+.modal {
+  &--form {
+    display: none;
+    position: fixed;
+    margin: auto;
+    top: 50%;
+    right: 0;
+    left: 0;
+    transform: translateY(-50%);
+    width: 490px;
+    height: 605px;
+    background-color: #00b2ff;
+
+    h3 {
+      margin: 0;
+      margin-bottom: 28px;
+      font-family: $second-font;
+      font-size: 36px;
+      line-height: 39px;
+      color: #ffffff;
+    }
+
+    p {
+      margin: 0;
+      margin-bottom: 50px;
+      color: #ffffff;
+    }
+  }
+}
