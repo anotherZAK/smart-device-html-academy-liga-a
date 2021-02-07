@@ -57,6 +57,127 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.write-us {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 120px; }
+  .write-us::before {
+    position: absolute;
+    content: "";
+    right: 600px;
+    top: 100px;
+    width: 686px;
+    height: 487px;
+    background-image: url("../img/png/bg-airplane-desktop@1x.png"); }
+
+.write-us h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "Roboto Condensed", "Arial", "sans-serif";
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff; }
+
+.write-us p {
+  margin: 0;
+  margin-bottom: 50px;
+  color: #ffffff; }
+
+@media (max-width: 1023px) {
+  .write-us {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 120px; }
+    .write-us::before {
+      content: none; }
+  .write-us h3 {
+    font-size: 32px; } }
+
+@media (max-width: 767px) {
+  .write-us h3 {
+    font-size: 28px; } }
+
+.write-us-form {
+  margin-left: auto;
+  max-width: 570px; }
+
+.write-us-form__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px; }
+
+.write-us-form__field label {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 20px;
+  width: 100%; }
+  .write-us-form__field label:last-child {
+    margin-right: 0; }
+
+.write-us-form__field input,
+.write-us-form textarea {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  width: 100%;
+  color: #ffffff;
+  background-color: #19baff;
+  border: none;
+  opacity: 1; }
+
+.write-us-form textarea {
+  margin-bottom: 43px;
+  min-height: 154px; }
+
+.write-us-form__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.write-us-form__submit label {
+  color: #ffffff; }
+
+.write-us-form__submit input {
+  border: 1px solid red; }
+
+.write-us-form__submit button {
+  margin-right: 40px;
+  padding-top: 14px;
+  padding-right: 40px;
+  padding-bottom: 14px;
+  padding-left: 40px;
+  width: 270px;
+  font-family: "Roboto Condensed", "Arial", "sans-serif";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1; }
+
+@media (max-width: 1023px) {
+  .write-us-form {
+    margin: 0 auto;
+    max-width: 590px; } }
+
+@media (max-width: 767px) {
+  .write-us-form__field {
+    display: block;
+    margin-bottom: 20px; }
+  .write-us-form__field input {
+    margin-bottom: 20px; }
+  .write-us-form__submit {
+    display: block; } }
+
 .smart-device-info__description {
   position: relative;
   margin: 0 auto;
@@ -599,6 +720,9 @@ img {
   .container-edge--service {
     padding-left: 18%;
     padding-right: 18%; }
+  .container-edge--form {
+    padding-left: 18%;
+    padding-right: 18%; }
   .container-edge--footer {
     padding-left: 4.4%;
     padding-right: 4.4%; }
@@ -631,6 +755,9 @@ img {
 
 .container-background--service {
   background-color: #1b2d37; }
+
+.container-background--form {
+  background-color: #00b2ff; }
 
 .container-background--footer {
   background-color: #fafafa; }

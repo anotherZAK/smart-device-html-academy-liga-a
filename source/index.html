@@ -51,12 +51,12 @@
           <div class="smart-device-info__description">
             <h1>Печатные платы</h1>
             <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-            <a class="smart-device-info__link smart-device-info__link--consult" href="">
+            <a class="smart-device-info__link smart-device-info__link--consult" href="#write-us">
               <span class="smart-device-info__link-tablet">Получить бесплатную
                 консультацию</span>
               <span class="smart-device-info__link-mobile">Бесплатная консультация</span>
             </a>
-            <a class="smart-device-info__link smart-device-info__link--downscroll" href="">Скролл вниз</a>
+            <a class="smart-device-info__link smart-device-info__link--downscroll" href="#advantage-id">Скролл вниз</a>
           </div>
         </section>
       </div>
@@ -64,7 +64,7 @@
   </header>
   <main>
     <div class="container-edge container-edge--advantage">
-      <section class="advantage">
+      <section class="advantage" id="advantage-id">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <ul class="advantage__list">
           <li class="advantage__item">
@@ -198,9 +198,9 @@
     </div>
     <div class="container-background container-background--form">
       <div class="container-edge container-edge--form">
-        <section class="write-us">
+        <section class="write-us" id="write-us">
           <h2 class="visually-hidden">Напишите нам</h2>
-          <form class="write-us-form">
+          <form class="write-us-form" action="https://echo.htmlacademy.ru/" method="get">
             <h3>Остались вопросы? Задайте их нам!</h3>
             <p>Мы проконсультируем Вас бесплатно</p>
             <div class="write-us-form__field">
@@ -209,8 +209,9 @@
                   required>
               </label>
               <label>
-                <input id="write-us-form-user-tel-id" type="tel" name="write-us-form-user-tel" placeholder="Телефон"
-                  required>
+                <input id="write-us-form-user-tel-id" type="tel" name="write-us-form-user-tel"
+                  pattern="[\+][7]{1}[\(][0-9]{3}[\)][0-9]{3}[\-][0-9]{2}[\-][0-9]{2}|[8]{1}[\(][0-9]{3}[\)][0-9]{3}[\-][0-9]{2}[\-][0-9]{2}"
+                  title="+X(XXX)XXX-XX-XX" placeholder="Телефон" required>
               </label>
             </div>
             <label>
@@ -316,6 +317,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/bundle.js"></script>
 </body>
 
 </html>
