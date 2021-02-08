@@ -4,18 +4,18 @@
   &::before,
   &::after {
     position: absolute;
-    bottom: 27px;
-    right: 24px;
+    bottom: 34px;
+    right: 26px;
     content: "";
-    width: 9px;
-    height: 2px;
+    width: 6px;
+    height: 1px;
     background-color: #ffffff;
     z-index: 2;
   }
 
   &::before {
     transform: rotate(45deg);
-    bottom: 32px;
+    bottom: 38px;
   }
 
   &::after {
@@ -24,6 +24,17 @@
 }
 
 .service-card__link {
+  &:hover {
+    img {
+      opacity: 0.5;
+    }
+
+    &::after {
+      box-shadow: 0 0 2px 4px #ffffff;
+    }
+
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -39,10 +50,11 @@
 
 .service-card h3 {
   position: absolute;
-  top: 0;
-  left: 40px;
-  width: 50%;
+  top: 30px;
+  left: 44px;
+  width: 43%;
   font-family: $second-font;
+  font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
@@ -58,6 +70,9 @@
   }
 
   .service-card h3 {
+    width: 22%;
+    top: 18px;
+  
     &::after {
       top: 173px;
       right: -318px;

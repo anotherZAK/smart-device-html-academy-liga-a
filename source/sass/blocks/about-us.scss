@@ -1,16 +1,22 @@
 .about-us {
   position: relative;
-  margin-bottom: 100px;
-  padding-left: 190px;
+  margin-bottom: 110px;
+  padding-left: 193px;
 
   &::before {
     position: absolute;
     content: "";
-    top: 0;
-    left: 0;
+    top: 5px;
+    left: -8px;
     width: 242px;
     height: 362px;
-    background-image: url("../../img/png/bg-company-2005-all-res.png");
+    background-image: url("../img/png/bg-company-2005-all-res@1x.png");
+    background-repeat: no-repeat;
+    background-size: 210px 317px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/png/bg-company-2005-all-res@2x.png");
+    }
   }
 }
 
@@ -30,10 +36,12 @@
 }
 
 .about-us__more-link {
+  display: inline-block;
+  margin-top: 19px;
   padding-top: 14px;
-  padding-right: 30px;
+  padding-right: 50px;
   padding-bottom: 14px;
-  padding-left: 30px;
+  padding-left: 50px;
   font-family: $second-font;
   font-size: 14px;
   font-weight: 700;
@@ -50,7 +58,19 @@
 }
 
 @media (max-width: $tablet-width) {
+  .about-us {
+    margin-bottom: 84px;
+    padding-left: 185px;
+
+    &::before {
+      top: 3px;
+      left: -30px;
+      background-size: 242px 362px;
+    }
+  }
+
   .about-us h2 {
+    margin-bottom: 23px;
     font-size: 32px;
   }
 

@@ -1,8 +1,8 @@
 .smart-device-info__description {
   position: relative;
   margin: 0 auto;
-  // min-width: 718px;
-  max-width: 1411px;
+  padding-left: 9px;
+  max-width: 1422px;
 
   &::before,
   &::after {
@@ -13,8 +13,8 @@
   &::before {
     width: 705px;
     height: 641px;
-    top: -200px;
-    left: 700px;
+    top: -197px;
+    left: 789px;
     background-image: url("../../img/svg/bg-triangle-desktop.svg");
     background-repeat: no-repeat;
   }
@@ -22,8 +22,8 @@
   &::after {
     width: 705px;
     height: 515px;
-    top: -100px;
-    left: 700px;
+    top: -57px;
+    left: 797px;
     background-image: url("../img/png/bg-circuit-board-all-res@1x.png");
 
     @media (min-resolution: 2dppx) {
@@ -35,7 +35,7 @@
 
 .smart-device-info__description h1 {
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 27px;
   font-family: $second-font;
   font-weight: 700;
   font-size: 80px;
@@ -48,8 +48,8 @@
 .smart-device-info__description p {
   position: relative;
   margin: 0;
-  margin-bottom: 37px;
-  padding-left: 94px;
+  margin-bottom: 62px;
+  padding-left: 98px;
   max-width: 750px;
   font-size: 22px;
   line-height: 34px;
@@ -60,8 +60,8 @@
     content: "";
     width: 66px;
     height: 2px;
-    top: 10px;
-    left: 0;
+    top: 17px;
+    left: 3px;
     background-color: #ffffff;
   }
 }
@@ -70,11 +70,11 @@
   color: #ffffff;
 
   &--consult {
-    margin-left: 93px;
-    padding-top: 17px;
-    padding-right: 28px;
-    padding-bottom: 14px;
-    padding-left: 28px;
+    margin-left: 96px;
+    padding-top: 18px;
+    padding-right: 46px;
+    padding-bottom: 17px;
+    padding-left: 46px;
     font-family: $second-font;
     font-weight: bold;
     font-size: 16px;
@@ -88,9 +88,10 @@
 
   &--downscroll {
     position: absolute;
-    top: 400px;
-    left: 40px;
+    top: 417px;
+    left: -28px;
     transform: rotate(270deg);
+    font-size: 14px;
     opacity: 0.5;
   }
 }
@@ -107,6 +108,8 @@
 
 @media (max-width: $tablet-width) {
   .smart-device-info__description {
+    padding-left: 63px;
+
     &::before {
       width: 605px;
       height: 541px;
@@ -120,8 +123,8 @@
     &::after {
       width: 465px;
       height: 340px;
-      top: -100px;
-      left: 500px;
+      top: -75px;
+      left: 485px;
       background-image: url("../img/png/bg-circuit-board-all-res@1x.png");
   
       @media (min-resolution: 2dppx) {
@@ -132,14 +135,15 @@
   }
 
   .smart-device-info__description h1 {
-    max-width: 75%;
+    margin-bottom: 29px;
+    max-width: 500px;
     font-size: 60px;
     line-height: 70px;
   }
 
   .smart-device-info__description p {
-    margin-bottom: 37px;
-    padding-left: 64px;
+    margin-bottom: 73px;
+    padding-left: 52px;
     max-width: 68%;
     font-size: 18px;
     line-height: 28px;
@@ -154,9 +158,9 @@
     color: #ffffff;
 
     &--consult {
-      margin-left: 63px;
-      padding-right: 14px;
-      padding-left: 14px;
+      margin-left: 52px;
+      padding-right: 30px;
+      padding-left: 30px;
     }
 
     &--downscroll {

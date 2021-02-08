@@ -1,7 +1,7 @@
 .write-us {
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 120px;
+  padding-top: 91px;
+  padding-bottom: 113px;
 
   &::before {
     position: absolute;
@@ -16,8 +16,9 @@
 
 .write-us h3 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-family: $second-font;
+  font-weight: 400;
   font-size: 36px;
   line-height: 51px;
   color: #ffffff;
@@ -32,8 +33,8 @@
 @media (max-width: $tablet-width) {
   .write-us {
     position: relative;
-    padding-top: 100px;
-    padding-bottom: 120px;
+    padding-top: 77px;
+    padding-bottom: 103px;
   
     &::before {
       content: none;
@@ -41,7 +42,14 @@
   }
 
   .write-us h3 {
+    margin-bottom: 13px;
+    margin-right: 13px;
+    margin-left: -3px;
     font-size: 32px;
+  }
+
+  .write-us p {
+    margin-bottom: 54px;
   }
 }
 

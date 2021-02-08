@@ -1,13 +1,9 @@
 .page-header {
-  margin-bottom: 149px;
+  margin-bottom: 112px;
 }
 
-// @media (max-width: $tablet-width) {
-//   .page-header {
-//     margin-bottom: 550px;
-
-//     &--js {
-//       margin-bottom: 70px;
-//     }
-//   }
-// }
+@media (max-width: $tablet-width) {
+  .page-header {
+    margin-bottom: 55px;
+  }
+}

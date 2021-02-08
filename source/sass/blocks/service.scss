@@ -1,9 +1,12 @@
 .service {
-  padding-top: 90px;
-  padding-bottom: 120px;
+  padding-top: 88px;
+  padding-bottom: 105px;
+  padding-left: 32px;
 }
 
 .service p {
+  margin: 0;
+  margin-bottom: 52px;
   font-family: $second-font;
   font-size: 36px;
   line-height: 51px;
@@ -21,8 +24,16 @@
 }
 
 @media (max-width: $tablet-width) {
+  .service {
+    padding-top: 48px;
+    padding-bottom: 34px;
+    padding-left: 0;
+  }
+
   .service p {
+    width: 87%;
     font-size: 32px;
+    line-height: 45px;
   }
 
   .service__list {
@@ -30,6 +41,6 @@
   }
 
   .service__item {
-    margin-bottom: 20px;
+    margin-bottom: 39px;
   }
 }

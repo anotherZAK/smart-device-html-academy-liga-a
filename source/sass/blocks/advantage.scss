@@ -1,5 +1,5 @@
 .advantage {
-  margin-bottom: 100px;
+  margin-bottom: 101px;
 }
 
 .advantage__list {
@@ -7,14 +7,35 @@
   grid-template-columns: repeat(2, 1fr);
   row-gap: 30px;
   column-gap: 30px;
+  margin: 0;
   padding: 0;
+  padding-left: 14px;
   list-style: none;
 }
 
 .advantage__item {
   max-width: 570px;
+  min-height: 299px;
   border: 1px solid #ebebeb;
   border-left: 3px solid #00b2ff;
+}
+
+@media (max-width: $tablet-width) {
+  .advantage {
+    margin-bottom: 50px;
+  }
+
+  .advantage__list {
+    padding-left: 0;
+  }
+
+  .advantage__item {
+    min-height: 306px;
+
+    &:nth-child(n+2) {
+      min-height: 234px;
+    }
+  }
 }
 
 @media (max-width: $mobile-width) {

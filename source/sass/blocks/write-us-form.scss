@@ -11,7 +11,7 @@
 }
 
 .write-us-form textarea {
-  margin-bottom: 43px;
+  margin-bottom: 40px;
   min-height: 154px;
 }
 
@@ -56,7 +56,7 @@
 
 .write-us-form__field label {
   flex-grow: 1;
-  margin-right: 20px;
+  margin-right: 28px;
   width: 100%;
 
   &:last-child {
@@ -67,13 +67,19 @@
 .write-us-form__field input,
 .write-us-form textarea {
   padding-top: 14px;
-  padding-bottom: 14px;
+  padding-bottom: 17px;
   padding-left: 16px;
   width: 100%;
+  font-size: 16px;
   color: #ffffff;
   background-color: #19baff;
   border: none;
   opacity: 1;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 3px 3px #666666;
+  }
 }
 
 .write-us-form__submit {
@@ -90,7 +96,7 @@
   padding-right: 40px;
   padding-bottom: 14px;
   padding-left: 40px;
-  width: 270px;
+  min-width: 270px;
   font-family: $second-font;
   font-size: 14px;
   font-weight: 700;
@@ -108,7 +114,20 @@
 @media (max-width: $tablet-width) {
   .write-us-form {
     margin: 0 auto;
+    padding-left: 3px;
     max-width: 590px;
+  }
+
+  .write-us-form textarea {
+    margin-bottom: 43px;
+    padding-top: 16px;
+    min-height: 162px;
+  }
+
+  .write-us-form__submit button {
+    padding-right: 46px;
+    padding-left: 46px;
+    min-width: 280px;
   }
 }
 

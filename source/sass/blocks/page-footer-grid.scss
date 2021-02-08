@@ -1,12 +1,14 @@
 .page-footer-grid {
   display: grid;
-  grid-template-columns: min-content 1fr 1fr;
+  grid-template-columns: min-content 2.5fr 1fr;
   margin: 0 auto;
-  max-width: 1411px;
+  padding-top: 66px;
+  max-width: 1430px;
 }
 
 @media (max-width: $tablet-width) {
   .page-footer-grid {
+    padding-top: 19px;
     grid-template-columns: 1fr 1fr;
   }
 }
