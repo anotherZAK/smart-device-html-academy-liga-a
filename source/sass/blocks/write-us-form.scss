@@ -132,16 +132,30 @@
 }
 
 @media (max-width: $mobile-width) {
+  .write-us-form {
+    padding-left: 0;
+  }
+
   .write-us-form__field {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
   .write-us-form__field input {
-    margin-bottom: 20px;
+    margin-bottom: 32px;
+  }
+
+  .write-us-form textarea {
+    margin-bottom: 27px;
+    padding-top: 12px;
+    min-height: 104px;
   }
 
   .write-us-form__submit {
-    display: block;
+    flex-direction: column;
+  }
+
+  .write-us-form__submit button {
+    min-width: 290px;
   }
 }

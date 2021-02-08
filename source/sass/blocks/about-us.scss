@@ -24,6 +24,7 @@
   margin: 0;
   margin-bottom: 20px;
   font-family: $second-font;
+  font-weight: 400;
   font-size: 36px;
   line-height: 51px;
   color: #666666;
@@ -86,15 +87,24 @@
 @media (max-width: $mobile-width) {
   .about-us {
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 64px;
     padding-left: 0;
-  
+
     &::before {
       content: none;
     }
   }
 
   .about-us h2 {
-    font-size: 38px;
+    margin-bottom: 14px;
+    font-size: 28px;
+  }
+
+  .about-us p {
+    margin-bottom: 40px;
+  }
+
+  .about-us__more-link {
+    margin-top: -11px;
   }
 }

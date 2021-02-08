@@ -72,10 +72,18 @@
   .service-card h3 {
     width: 22%;
     top: 18px;
-  
+
     &::after {
       top: 173px;
       right: -318px;
     }
+  }
+}
+
+@media (max-width: $mobile-width) {
+
+  .service-card h3 {
+    width: 56%;
+    top: 1px;
   }
 }

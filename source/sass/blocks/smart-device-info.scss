@@ -34,6 +34,7 @@
 }
 
 .smart-device-info__description h1 {
+  position: relative;
   margin: 0;
   margin-bottom: 27px;
   font-family: $second-font;
@@ -43,6 +44,7 @@
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: #ffffff;
+  z-index: 10;
 }
 
 .smart-device-info__description p {
@@ -119,14 +121,14 @@
       background-repeat: no-repeat;
       background-size: 465px 340px;
     }
-  
+
     &::after {
       width: 465px;
       height: 340px;
       top: -75px;
       left: 485px;
       background-image: url("../img/png/bg-circuit-board-all-res@1x.png");
-  
+
       @media (min-resolution: 2dppx) {
         background-image: url("../img/png/bg-circuit-board-all-res@2x.png");
         background-size: 465px 340px;
@@ -171,6 +173,8 @@
 
 @media (max-width: $mobile-width) {
   .smart-device-info__description {
+    padding-left: 0;
+
     &::before {
       width: 605px;
       height: 541px;
@@ -180,14 +184,14 @@
       background-repeat: no-repeat;
       background-size: 465px 340px;
     }
-  
+
     &::after {
       width: 301px;
       height: 220px;
-      top: -200px;
-      left: 0;
+      top: -194px;
+      left: 11px;
       background-image: url("../img/png/bg-circuit-board-all-res@1x.png");
-  
+
       @media (min-resolution: 2dppx) {
         background-image: url("../img/png/bg-circuit-board-all-res@2x.png");
         background-size: 301px 220px;
@@ -196,23 +200,30 @@
   }
 
   .smart-device-info__description h1 {
+    margin-bottom: 26px;
     font-size: 40px;
     line-height: 47px;
   }
 
   .smart-device-info__description p {
-    max-width: 90%;
+    margin-bottom: 41px;
+    max-width: 100%;
     font-size: 16px;
     line-height: 25px;
+
+  &::after {
+    top: 15px;
+  }
   }
 
   .smart-device-info__link {
     color: #ffffff;
 
     &--consult {
+      display: block;
       margin-left: 0;
-      padding-right: 11px;
-      padding-left: 11px;
+      padding-right: 34px;
+      padding-left: 33px;
     }
 
     &--downscroll {

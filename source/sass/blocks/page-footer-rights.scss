@@ -47,11 +47,35 @@
 
   .page-footer-rights__item {
     margin-right: 0;
-  
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
     &--absolute {
       position: absolute;
       top: -373px;
       left: 303px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-footer-rights__item {
+    &--absolute {
+      position: absolute;
+      top: -622px;
+      left: 29px;
+    }
+
+    &:nth-child(3n) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &:last-child {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

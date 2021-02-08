@@ -44,3 +44,26 @@
     margin-bottom: 39px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .service {
+    padding-top: 50px;
+    padding-bottom: 34px;
+  }
+
+  .service p {
+    margin-bottom: 42px;
+    padding-left: 10px;
+    width: 100%;
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .service__list {
+    display: block;
+  }
+
+  .service__item {
+    margin-bottom: 24px;
+  }
+}

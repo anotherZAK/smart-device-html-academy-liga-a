@@ -33,17 +33,17 @@
   .container-edge {
     padding-left: 25px;
     padding-right: 25px;
-  
+
     &--header {
       padding-left: 25px;
       padding-right: 25px;
     }
-  
+
     &--advantage {
       padding-left: 25px;
       padding-right: 25px;
     }
-  
+
     &--footer {
       padding-left: 25px;
       padding-right: 24px;
@@ -51,9 +51,9 @@
   }
 }
 
-// @media (max-width: $mobile-width) {
-//   .container {
-//     padding-left: 16px;
-//     padding-right: 16px;
-//   }
-// }
+@media (max-width: $mobile-width) {
+  .container-edge {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

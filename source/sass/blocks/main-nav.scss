@@ -110,7 +110,7 @@
     margin-bottom: 116px;
     padding-top: 20px;
   }
-  
+
   .main-nav__logo {
     padding-left: 0;
   }
@@ -149,7 +149,7 @@
     height: 20px;
     top: 14px;
     left: 8px;
-  
+
     &--phone {
       width: 24px;
       height: 24px;
@@ -160,8 +160,31 @@
 }
 
 @media (max-width: $mobile-width) {
+  .main-nav {
+    margin-bottom: 223px;
+    padding-top: 18px;
+  }
+
+  .main-nav__list {
+    padding-top: 3px;
+  }
+
+  .main-nav__link {
+    top: 2px;
+    left: -1px;
+
+    &--phone {
+      left: 8px;
+    }
+  }
+
   .main-nav__logo {
     min-width: fit-content;
+  }
+
+  .main-nav img {
+    width: 38px;
+    height: 38px;
   }
 
   .main-nav__logo div {
