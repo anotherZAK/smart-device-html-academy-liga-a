@@ -52,6 +52,11 @@
   color: #00b2ff;
   border: 1px solid #00b2ff;
   border-radius: 5px;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #00b2ff;
+  }
 }
 
 .about-us__info-tablet {

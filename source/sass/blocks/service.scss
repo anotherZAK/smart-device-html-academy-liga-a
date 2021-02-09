@@ -42,6 +42,12 @@
 
   .service__item {
     margin-bottom: 39px;
+
+    &:nth-child(3n) {
+      h3 {
+        margin-top: 32px;
+      }
+    }
   }
 }
 

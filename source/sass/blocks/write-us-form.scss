@@ -20,6 +20,7 @@
   margin-bottom: 40px;
 
   &--modal {
+    position: relative;
     flex-direction: column;
     align-items: center;
 
@@ -32,24 +33,79 @@
       margin-bottom: 30px;
     }
 
-    button {
-      margin-right: 40px;
-      padding-top: 14px;
-      padding-right: 40px;
-      padding-bottom: 14px;
-      padding-left: 40px;
-      width: 270px;
-      font-family: $second-font;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 16px;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: #ffffff;
-      background-color: transparent;
-      border: 1px solid #ffffff;
-      border-radius: 5px;
-      cursor: pointer;
+    .write-us-form__field-button {
+      &--submit {
+        margin-right: 40px;
+        padding-top: 14px;
+        padding-right: 40px;
+        padding-bottom: 14px;
+        padding-left: 40px;
+        width: 270px;
+        font-family: $second-font;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #ffffff;
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      &--close {
+          position: relative;
+          padding: 16px;
+          top: -527px;
+          left: 213px;
+          cursor: pointer;
+
+          &::before,
+          &::after {
+            position: absolute;
+            top: 55%;
+            right: 0px;
+            content: "";
+            width: 35px;
+            height: 2px;
+            background-color: #91929b;
+          }
+
+          &::before {
+            transform: rotate(45deg);
+            top: 18px;
+          }
+
+          &::after {
+            transform: rotate(-45deg);
+          }
+        }
+      
+    }
+
+    .write-us-form__tick {
+      display: none;
+      position: absolute;
+      top: 387px;
+      left: 0;
+      width: 12px;
+      stroke: #ffffff;
+      fill: transparent;
+    }
+
+    input[type="checkbox"]:checked + .write-us-form__tick {
+      display: block;
+    }
+
+    input[type="checkbox"]:hover ~ .write-us-form__agree::before,
+    input[type="checkbox"]:focus ~ .write-us-form__agree::before {
+      border-color: #ffffff;
+    }
+
+    input[type="checkbox"]:active + .write-us-form__tick,
+    input[type="checkbox"]:active ~ .write-us-form__agree {
+      opacity: 0.3;
     }
   }
 }
@@ -87,7 +143,64 @@
 }
 
 .write-us-form__submit label {
+  position: relative;
+  padding-top: 5px;
   color: #ffffff;
+}
+
+.write-us-form__tick {
+  display: none;
+  position: absolute;
+  top: 11px;
+  left: 0;
+  width: 12px;
+  stroke: #ffffff;
+  fill: transparent;
+}
+
+.write-us-form__submit input:checked + .write-us-form__tick {
+  display: block;
+}
+
+.write-us-form__submit input:hover ~ .write-us-form__agree::before,
+.filter-checkbox__data:focus ~ .write-us-form__agree::before {
+  border-color: #ffffff;
+}
+
+.write-us-form__submit input:active + .write-us-form__tick,
+.write-us-form__submit input:active ~ .write-us-form__agree {
+  opacity: 0.3;
+}
+
+.write-us-form__agree {
+  position: relative;
+  left: 30px;
+  font-size: 14px;
+  line-height: 16px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 1px;
+    left: -32px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ffffff;
+  }
+}
+
+.write-us-form__field--modal input[type="checkbox"],
+.write-us-form__submit input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .write-us-form__submit button {
@@ -109,6 +222,11 @@
   border-radius: 5px;
   cursor: pointer;
   order: -1;
+
+  &:hover {
+    color: #19baff;
+    background-color: #ffffff;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -119,7 +237,7 @@
   }
 
   .write-us-form textarea {
-    margin-bottom: 43px;
+    margin-bottom: 40px;
     padding-top: 16px;
     min-height: 162px;
   }
@@ -156,6 +274,7 @@
   }
 
   .write-us-form__submit button {
+    margin-bottom: 21px;
     min-width: 290px;
   }
 }

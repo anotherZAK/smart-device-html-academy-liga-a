@@ -1,7 +1,7 @@
 .write-us {
   position: relative;
   padding-top: 91px;
-  padding-bottom: 113px;
+  padding-bottom: 110px;
 
   &::before {
     position: absolute;
@@ -17,6 +17,7 @@
 .write-us h3 {
   margin: 0;
   margin-bottom: 10px;
+  margin-left: -3px;
   font-family: $second-font;
   font-weight: 400;
   font-size: 36px;
@@ -44,7 +45,6 @@
   .write-us h3 {
     margin-bottom: 13px;
     margin-right: 13px;
-    margin-left: -3px;
     font-size: 32px;
   }
 
@@ -56,11 +56,11 @@
 @media (max-width: $mobile-width) {
   .write-us {
     padding-top: 30px;
-    padding-bottom: 61px;
+    padding-bottom: 33px;
   }
 
   .write-us h3 {
-    padding-left: 3px;
+    margin-left: 0;
     font-size: 28px;
     line-height: 39px;
   }

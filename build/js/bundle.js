@@ -4914,7 +4914,6 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_4__.default.MaskedRegExp = MaskedRegExp
     mask: '+{7}(000)000-00-00'
   };
   var mask = IMask(userTel, maskOptions);
-
 })();
 
 }();

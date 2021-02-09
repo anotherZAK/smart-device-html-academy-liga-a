@@ -32,7 +32,6 @@
     &::after {
       box-shadow: 0 0 2px 4px #ffffff;
     }
-
   }
 
   &::after {
@@ -81,7 +80,6 @@
 }
 
 @media (max-width: $mobile-width) {
-
   .service-card h3 {
     width: 56%;
     top: 1px;

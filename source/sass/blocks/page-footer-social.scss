@@ -1,7 +1,7 @@
 .page-footer-social__logo {
   display: flex;
   min-width: 232px;
-  margin-bottom: 53px;
+  margin-bottom: 41px;
   padding-left: 16px;
 }
 
@@ -56,6 +56,10 @@
   }
 }
 
+.page-footer-social__blink {
+  display: none;
+}
+
 .page-footer-social__icon {
   fill: #999999;
 }
@@ -75,6 +79,16 @@
 
   .page-footer-social__list {
     padding-left: 0;
+  }
+
+  .page-footer-social__blink {
+    display: block;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #1b2d37;
+    opacity: 0.5;
   }
 }
 
