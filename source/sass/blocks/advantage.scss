@@ -1,5 +1,18 @@
 .advantage {
+  position: relative;
   margin-bottom: 105px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 736px;
+    height: 640px;
+    top: -200px;
+    left: 700px;
+    background-image: url("../img/svg/bg-triangle-desktop-advantage.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
 }
 
 .advantage__list {
