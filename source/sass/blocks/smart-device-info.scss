@@ -122,12 +122,10 @@
 
     &::before {
       width: 605px;
-      height: 541px;
-      top: -200px;
-      left: 700px;
-      background-image: url("../img/svg/bg-triangle-desktop.svg");
-      background-repeat: no-repeat;
-      background-size: 465px 340px;
+      height: 509px;
+      top: -228px;
+      left: 415px;
+      background-size: 529px;
     }
 
     &::after {
@@ -135,10 +133,8 @@
       height: 340px;
       top: -75px;
       left: 485px;
-      background-image: url("../img/png/bg-circuit-board-all-res@1x.png");
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/png/bg-circuit-board-all-res@2x.png");
         background-size: 465px 340px;
       }
     }
@@ -184,24 +180,21 @@
     padding-left: 0;
 
     &::before {
-      width: 605px;
-      height: 541px;
-      top: -200px;
-      left: 700px;
-      background-image: url("../img/svg/bg-triangle-desktop.svg");
-      background-repeat: no-repeat;
-      background-size: 465px 340px;
+      top: -332px;
+      left: auto;
+      right: -452px;
+      background-size: 506px;
     }
 
     &::after {
       width: 301px;
       height: 220px;
       top: -194px;
-      left: 11px;
-      background-image: url("../img/png/bg-circuit-board-all-res@1x.png");
+      left: auto;
+      right: -22px;
+      background-size: 301px 220px;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/png/bg-circuit-board-all-res@2x.png");
         background-size: 301px 220px;
       }
     }
@@ -219,9 +212,9 @@
     font-size: 16px;
     line-height: 25px;
 
-  &::after {
-    top: 15px;
-  }
+    &::after {
+      top: 15px;
+    }
   }
 
   .smart-device-info__link {

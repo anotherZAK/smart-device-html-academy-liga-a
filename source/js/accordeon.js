@@ -3,6 +3,13 @@
 (function () {
   var nameLength = 13;
   var btnAccordeonContainer = document.querySelector('.page-footer-grid');
+  var accordeons = btnAccordeonContainer.querySelectorAll('.accordeon');
+  var accordeonLists = btnAccordeonContainer.querySelectorAll('.accordeon__list');
+
+  for (var i = 0; i < accordeons.length; i++) {
+    accordeons[i].classList.remove('accordeon--open');
+    accordeonLists[i].classList.add('accordeon__list--hide');
+  }
 
   btnAccordeonContainer.addEventListener('click', function (evt) {
 

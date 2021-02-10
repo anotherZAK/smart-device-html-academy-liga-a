@@ -6,13 +6,13 @@
   .accordeon {
     display: block;
     position: relative;
-    top: -50px;
-    left: 90%;
+    top: -40px;
+    left: 93.9%;
     padding: 8px;
     border: none;
     background-color: transparent;
     cursor: pointer;
-  
+
     &::before,
     &::after {
       position: absolute;
@@ -23,23 +23,23 @@
       height: 1px;
       background-color: #c4c4c4;
     }
-  
+
     &::after {
       transform: rotate(90deg);
     }
-  
+
     &--open {
       &::after {
         content: none;
       }
     }
   }
-  
+
   .accordeon__list {
+    margin-bottom: 45px;
+
     &--hide {
       display: none;
     }
   }
 }
-
-

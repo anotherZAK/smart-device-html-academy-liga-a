@@ -4909,6 +4909,13 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_4__.default.MaskedRegExp = MaskedRegExp
 (function () {
   var nameLength = 13;
   var btnAccordeonContainer = document.querySelector('.page-footer-grid');
+  var accordeons = btnAccordeonContainer.querySelectorAll('.accordeon');
+  var accordeonLists = btnAccordeonContainer.querySelectorAll('.accordeon__list');
+
+  for (var i = 0; i < accordeons.length; i++) {
+    accordeons[i].classList.remove('accordeon--open');
+    accordeonLists[i].classList.add('accordeon__list--hide');
+  }
 
   btnAccordeonContainer.addEventListener('click', function (evt) {
 
@@ -5000,13 +5007,16 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_4__.default.MaskedRegExp = MaskedRegExp
 
 
 (function () {
-  var iMask = __webpack_require__(/*! imask */ "./node_modules/imask/esm/index.js")
-  var userTel = document.querySelector('#write-us-form-user-tel-id');
+  var iMask = __webpack_require__(/*! imask */ "./node_modules/imask/esm/index.js");
+  var userTel = document.querySelectorAll('input[type=tel]');
 
   var maskOptions = {
     mask: '+{7}(000)000-00-00'
   };
-  var mask = IMask(userTel, maskOptions);
+
+  for (var i = 0; i < userTel.length; i++) {
+    var mask = IMask(userTel[i], maskOptions);
+  }
 })();
 
 }();

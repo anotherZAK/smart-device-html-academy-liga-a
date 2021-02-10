@@ -20,20 +20,22 @@
     width: 490px;
     height: 605px;
     background-color: #00b2ff;
-    z-index: 10;
+    z-index: 100;
 
     h3 {
       margin: 0;
-      margin-bottom: 28px;
+      margin-bottom: 12px;
       font-family: $second-font;
-      font-size: 36px;
+      font-size: 28px;
+      font-weight: 400;
       line-height: 39px;
       color: #ffffff;
     }
 
     p {
       margin: 0;
-      margin-bottom: 50px;
+      margin-bottom: 34px;
+      width: 90%;
       color: #ffffff;
     }
   }

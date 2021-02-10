@@ -1,11 +1,14 @@
 'use strict';
 
 (function () {
-  var iMask = require(`imask`)
-  var userTel = document.querySelector('#write-us-form-user-tel-id');
+  var iMask = require(`imask`);
+  var userTel = document.querySelectorAll('input[type=tel]');
 
   var maskOptions = {
     mask: '+{7}(000)000-00-00'
   };
-  var mask = IMask(userTel, maskOptions);
+
+  for (var i = 0; i < userTel.length; i++) {
+    var mask = IMask(userTel[i], maskOptions);
+  }
 })();
