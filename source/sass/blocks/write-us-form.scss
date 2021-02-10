@@ -85,41 +85,40 @@
       }
 
       &--close {
-          position: relative;
-          padding: 16px;
-          top: -492px;
-          left: 216px;
-          border: none;
-          background-color: transparent;
-          cursor: pointer;
+        position: relative;
+        padding: 16px;
+        top: -492px;
+        left: 216px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
 
-          &::before,
-          &::after {
-            position: absolute;
-            top: 55%;
-            right: 4px;
-            content: "";
-            width: 23px;
-            height: 1px;
-            background-color: #ffffff;
-          }
-
-          &::before {
-            transform: rotate(45deg);
-            top: 18px;
-          }
-
-          &::after {
-            transform: rotate(-45deg);
-          }
+        &::before,
+        &::after {
+          position: absolute;
+          top: 55%;
+          right: 4px;
+          content: "";
+          width: 23px;
+          height: 1px;
+          background-color: #ffffff;
         }
-      
+
+        &::before {
+          transform: rotate(45deg);
+          top: 18px;
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
     }
 
     .write-us-form__tick {
       display: none;
       position: absolute;
-      top: 379px;
+      top: 380px;
       left: 2px;
       width: 12px;
       stroke: #ffffff;
