@@ -4936,6 +4936,7 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_4__.default.MaskedRegExp = MaskedRegExp
 
 
 (function () {
+  var body = document.querySelector('.page-body');
   var modal = document.querySelector('.modal');
   var callButton = document.querySelector('.link-modal--callback');
   var writeUsClose = modal.querySelector('.write-us-form__field-button--close');
@@ -4948,6 +4949,18 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_4__.default.MaskedRegExp = MaskedRegExp
   var storageName = '';
   var storagePhone = '';
 
+  var overlayClickHandle = function (evt) {
+    if (modal.classList.contains('modal--show') && !evt.target.classList.contains('link-modal--callback')) {
+      modal.classList.remove('modal--show');
+      modal.classList.remove('modal--error');
+      body.classList.remove('page-body--block-modal');
+    }
+
+    modal.addEventListener('click', function (evtModal) {
+      evtModal.stopPropagation();
+    });
+  };
+
   try {
     storageName = localStorage.getItem('userName');
     storagePhone = localStorage.getItem('userPhone');
@@ -4957,8 +4970,8 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_4__.default.MaskedRegExp = MaskedRegExp
 
   callButton.addEventListener('click', function (evt) {
     evt.preventDefault();
-    evt.stopPropagation();
     modal.classList.add('modal--show');
+    body.classList.add('page-body--block-modal');
 
     if (storageName) {
       userName.value = storageName;
@@ -4968,12 +4981,16 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_4__.default.MaskedRegExp = MaskedRegExp
       userPhone.value = storagePhone;
       userMessage.focus();
     }
+
+    document.addEventListener('click', overlayClickHandle);
   });
 
   writeUsClose.addEventListener('click', function (evt) {
     evt.preventDefault();
     modal.classList.remove('modal--show');
     modal.classList.remove('modal--error');
+    body.classList.remove('page-body--block-modal');
+    document.removeEventListener('click', overlayClickHandle);
   });
 
   writeUsForm.addEventListener('submit', function (evt) {
@@ -4995,19 +5012,10 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_4__.default.MaskedRegExp = MaskedRegExp
         evt.preventDefault();
         modal.classList.remove('modal--show');
         modal.classList.remove('modal--error');
+        body.classList.remove('page-body--block-modal');
+        document.removeEventListener('click', overlayClickHandle);
       }
     }
-  });
-
-  document.addEventListener('click', function () {
-    if (modal.classList.contains('modal--show')) {
-      modal.classList.remove('modal--show');
-      modal.classList.remove('modal--error');
-    }
-
-    modal.addEventListener('click', function (evt) {
-      evt.stopPropagation();
-    });
   });
 })();
 
