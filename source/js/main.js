@@ -4902,28 +4902,28 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_4__.default.MaskedRegExp = MaskedRegExp
 /************************************************************************/
 !function() {
 /*!********************************!*\
-  !*** ./source/js/accordeon.js ***!
+  !*** ./source/js/accordion.js ***!
   \********************************/
 
 
 (function () {
   var nameLength = 13;
-  var btnAccordeonContainer = document.querySelector('.page-footer-grid');
-  var accordeons = btnAccordeonContainer.querySelectorAll('.accordeon');
-  var accordeonLists = btnAccordeonContainer.querySelectorAll('.accordeon__list');
+  var btnAccordionContainer = document.querySelector('.page-footer-grid');
+  var accordions = btnAccordionContainer.querySelectorAll('.accordion');
+  var accordionLists = btnAccordionContainer.querySelectorAll('.accordion-list');
 
-  for (var i = 0; i < accordeons.length; i++) {
-    accordeons[i].classList.remove('accordeon--open');
-    accordeonLists[i].classList.add('accordeon__list--hide');
+  for (var i = 0; i < accordions.length; i++) {
+    accordions[i].classList.remove('accordion--open');
+    accordionLists[i].classList.add('accordion-list--hide');
   }
 
-  btnAccordeonContainer.addEventListener('click', function (evt) {
+  btnAccordionContainer.addEventListener('click', function (evt) {
 
-    if (evt.target.classList.contains('accordeon')) {
+    if (evt.target.classList.contains('accordion')) {
 
-      var accordeonList = document.querySelector('.' + evt.target.classList.value.slice(0, nameLength) + ' + ul');
-      evt.target.classList.toggle('accordeon--open');
-      accordeonList.classList.toggle('accordeon__list--hide');
+      var accordionList = document.querySelector('.' + evt.target.classList.value.slice(0, nameLength) + ' + ul');
+      evt.target.classList.toggle('accordion--open');
+      accordionList.classList.toggle('accordion-list--hide');
     }
   });
 })();
@@ -4937,7 +4937,7 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_4__.default.MaskedRegExp = MaskedRegExp
 
 (function () {
   var modal = document.querySelector('.modal');
-  var callButton = document.querySelector('.main-nav__link--callback');
+  var callButton = document.querySelector('.link-modal--callback');
   var writeUsClose = modal.querySelector('.write-us-form__field-button--close');
   var writeUsForm = modal.querySelector('.write-us-form--modal');
   var userName = modal.querySelector('input[type=text]');
@@ -4948,7 +4948,6 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_4__.default.MaskedRegExp = MaskedRegExp
   var storageName = '';
   var storagePhone = '';
 
-
   try {
     storageName = localStorage.getItem('userName');
     storagePhone = localStorage.getItem('userPhone');
@@ -4958,7 +4957,9 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_4__.default.MaskedRegExp = MaskedRegExp
 
   callButton.addEventListener('click', function (evt) {
     evt.preventDefault();
+    evt.stopPropagation();
     modal.classList.add('modal--show');
+
     if (storageName) {
       userName.value = storageName;
       userPhone.focus();
@@ -4997,6 +4998,17 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_4__.default.MaskedRegExp = MaskedRegExp
       }
     }
   });
+
+  document.addEventListener('click', function () {
+    if (modal.classList.contains('modal--show')) {
+      modal.classList.remove('modal--show');
+      modal.classList.remove('modal--error');
+    }
+
+    modal.addEventListener('click', function (evt) {
+      evt.stopPropagation();
+    });
+  });
 })();
 
 }();
@@ -5027,10 +5039,10 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_4__.default.MaskedRegExp = MaskedRegExp
 
 
 (function () {
-  var anchorsContainer = document.querySelector('.smart-device-info__description');
+  var anchorsContainer = document.querySelector('.company-info__description');
 
   var handleAnchorClick = function (evt) {
-    if (evt.target.classList.value.includes('smart-device-info__link') || evt.target.parentElement.classList.value.includes('smart-device-info__link')) {
+    if (evt.target.classList.value.includes('company-info__link') || evt.target.parentElement.classList.value.includes('company-info__link')) {
 
       evt.preventDefault();
       if (evt.target.hash) {

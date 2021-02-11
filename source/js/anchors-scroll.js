@@ -1,10 +1,10 @@
 'use strict';
 
 (function () {
-  var anchorsContainer = document.querySelector('.smart-device-info__description');
+  var anchorsContainer = document.querySelector('.company-info__description');
 
   var handleAnchorClick = function (evt) {
-    if (evt.target.classList.value.includes('smart-device-info__link') || evt.target.parentElement.classList.value.includes('smart-device-info__link')) {
+    if (evt.target.classList.value.includes('company-info__link') || evt.target.parentElement.classList.value.includes('company-info__link')) {
 
       evt.preventDefault();
       if (evt.target.hash) {

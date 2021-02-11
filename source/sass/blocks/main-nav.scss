@@ -73,17 +73,6 @@
   padding-bottom: 14px;
   padding-left: 25px;
 
-  &--callback {
-    font-family: $second-font;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-  }
-
   &:hover {
     color: #00b2ff;
     border-color: #00b2ff;
@@ -128,8 +117,7 @@
     }
   }
 
-  .main-nav__link-blink,
-  .main-nav__link--callback {
+  .main-nav__link-blink {
     display: none;
   }
 

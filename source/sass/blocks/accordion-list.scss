@@ -1,0 +1,9 @@
+@media (max-width: $mobile-width) {
+  .accordion-list {
+    margin-bottom: 45px;
+
+    &--hide {
+      display: none;
+    }
+  }
+}

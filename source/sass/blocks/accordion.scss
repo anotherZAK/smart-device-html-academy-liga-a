@@ -1,14 +1,16 @@
-.accordeon {
+.accordion {
   display: none;
 }
 
 @media (max-width: $mobile-width) {
-  .accordeon {
+  .accordion {
     display: block;
     position: relative;
     top: -40px;
-    left: 93.9%;
-    padding: 8px;
+    left: 0%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 100%;
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -17,8 +19,8 @@
     &::after {
       position: absolute;
       content: "";
-      top: 8px;
-      left: 0;
+      top: 30px;
+      left: 93.9%;
       width: 16px;
       height: 1px;
       background-color: #c4c4c4;
@@ -32,14 +34,6 @@
       &::after {
         content: none;
       }
-    }
-  }
-
-  .accordeon__list {
-    margin-bottom: 45px;
-
-    &--hide {
-      display: none;
     }
   }
 }

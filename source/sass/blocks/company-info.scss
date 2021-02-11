@@ -1,4 +1,4 @@
-.smart-device-info__description {
+.company-info__description {
   position: relative;
   margin: 0 auto;
   padding-left: 9px;
@@ -33,7 +33,7 @@
   }
 }
 
-.smart-device-info__description h1 {
+.company-info__description h1 {
   position: relative;
   margin: 0;
   margin-bottom: 27px;
@@ -47,7 +47,7 @@
   z-index: 10;
 }
 
-.smart-device-info__description p {
+.company-info__description p {
   position: relative;
   margin: 0;
   margin-bottom: 62px;
@@ -68,7 +68,7 @@
   }
 }
 
-.smart-device-info__link {
+.company-info__link {
   color: #ffffff;
 
   &--consult {
@@ -106,18 +106,18 @@
   }
 }
 
-.smart-device-info__gallery img {
+.company-info__gallery img {
   position: relative;
   top: -200px;
   left: 0;
 }
 
-.smart-device-info__link-mobile {
+.company-info__link-mobile {
   display: none;
 }
 
 @media (max-width: $tablet-width) {
-  .smart-device-info__description {
+  .company-info__description {
     padding-left: 63px;
 
     &::before {
@@ -140,14 +140,14 @@
     }
   }
 
-  .smart-device-info__description h1 {
+  .company-info__description h1 {
     margin-bottom: 29px;
     max-width: 500px;
     font-size: 60px;
     line-height: 70px;
   }
 
-  .smart-device-info__description p {
+  .company-info__description p {
     margin-bottom: 73px;
     padding-left: 52px;
     max-width: 68%;
@@ -160,7 +160,7 @@
     }
   }
 
-  .smart-device-info__link {
+  .company-info__link {
     color: #ffffff;
 
     &--consult {
@@ -176,7 +176,7 @@
 }
 
 @media (max-width: $mobile-width) {
-  .smart-device-info__description {
+  .company-info__description {
     padding-left: 0;
 
     &::before {
@@ -200,13 +200,13 @@
     }
   }
 
-  .smart-device-info__description h1 {
+  .company-info__description h1 {
     margin-bottom: 26px;
     font-size: 40px;
     line-height: 47px;
   }
 
-  .smart-device-info__description p {
+  .company-info__description p {
     margin-bottom: 41px;
     max-width: 100%;
     font-size: 16px;
@@ -217,7 +217,7 @@
     }
   }
 
-  .smart-device-info__link {
+  .company-info__link {
     color: #ffffff;
 
     &--consult {
@@ -232,11 +232,11 @@
     }
   }
 
-  .smart-device-info__link-tablet {
+  .company-info__link-tablet {
     display: none;
   }
 
-  .smart-device-info__link-mobile {
+  .company-info__link-mobile {
     display: inline;
   }
 }

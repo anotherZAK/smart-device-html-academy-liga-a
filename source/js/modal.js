@@ -2,7 +2,7 @@
 
 (function () {
   var modal = document.querySelector('.modal');
-  var callButton = document.querySelector('.main-nav__link--callback');
+  var callButton = document.querySelector('.link-modal--callback');
   var writeUsClose = modal.querySelector('.write-us-form__field-button--close');
   var writeUsForm = modal.querySelector('.write-us-form--modal');
   var userName = modal.querySelector('input[type=text]');
@@ -13,7 +13,6 @@
   var storageName = '';
   var storagePhone = '';
 
-
   try {
     storageName = localStorage.getItem('userName');
     storagePhone = localStorage.getItem('userPhone');
@@ -23,7 +22,9 @@
 
   callButton.addEventListener('click', function (evt) {
     evt.preventDefault();
+    evt.stopPropagation();
     modal.classList.add('modal--show');
+
     if (storageName) {
       userName.value = storageName;
       userPhone.focus();
@@ -61,5 +62,16 @@
         modal.classList.remove('modal--error');
       }
     }
+  });
+
+  document.addEventListener('click', function () {
+    if (modal.classList.contains('modal--show')) {
+      modal.classList.remove('modal--show');
+      modal.classList.remove('modal--error');
+    }
+
+    modal.addEventListener('click', function (evt) {
+      evt.stopPropagation();
+    });
   });
 })();
