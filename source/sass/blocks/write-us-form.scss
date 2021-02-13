@@ -163,6 +163,10 @@
   border: none;
   opacity: 1;
 
+  &::placeholder {
+    color: #ffffff;
+  }
+
   &:hover,
   &:focus {
     box-shadow: 0 0 3px 3px #1b2d37;

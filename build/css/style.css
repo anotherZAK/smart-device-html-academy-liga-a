@@ -247,6 +247,21 @@ img {
   background-color: #19baff;
   border: none;
   opacity: 1; }
+  .write-us-form__field input::-webkit-input-placeholder,
+  .write-us-form textarea::-webkit-input-placeholder {
+    color: #ffffff; }
+  .write-us-form__field input::-moz-placeholder,
+  .write-us-form textarea::-moz-placeholder {
+    color: #ffffff; }
+  .write-us-form__field input:-ms-input-placeholder,
+  .write-us-form textarea:-ms-input-placeholder {
+    color: #ffffff; }
+  .write-us-form__field input::-ms-input-placeholder,
+  .write-us-form textarea::-ms-input-placeholder {
+    color: #ffffff; }
+  .write-us-form__field input::placeholder,
+  .write-us-form textarea::placeholder {
+    color: #ffffff; }
   .write-us-form__field input:hover, .write-us-form__field input:focus,
   .write-us-form textarea:hover,
   .write-us-form textarea:focus {
