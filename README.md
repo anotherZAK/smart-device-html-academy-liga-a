@@ -1,5 +1,5 @@
-# smart-device-html-academy-liga-a
-## Краткая инструкция по работе
+# smart-device-html-academy-liga-a.
+## Краткая инструкция по работе.
 Для работы с проектом у вас должен быть установлен:
 
 * Node.js v.10.15.3
