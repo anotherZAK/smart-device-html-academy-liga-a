@@ -1,14 +1,17 @@
 .page-body {
+  position: relative;
   margin: 0;
   overflow: hidden;
 
   &--block-modal {
+    height: 100%;
+
     &::after {
       position: absolute;
       content: "";
       top: 0;
       width: 100%;
-      height: 402%;
+      height: 100%;
       background-color: #020e14;
       opacity: 0.8;
       z-index: 99;
