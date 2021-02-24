@@ -898,17 +898,20 @@ img {
     width: 90%; } }
 
 .page-body {
+  position: relative;
   margin: 0;
   overflow: hidden; }
-  .page-body--block-modal::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    width: 100%;
-    height: 402%;
-    background-color: #020e14;
-    opacity: 0.8;
-    z-index: 99; }
+  .page-body--block-modal {
+    height: 100%; }
+    .page-body--block-modal::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #020e14;
+      opacity: 0.8;
+      z-index: 99; }
 
 .modal {
   display: none; }

@@ -53,24 +53,20 @@
 }
 
 .main-nav__item {
-  margin-right: 70px;
+  margin-right: 88px;
   margin-bottom: 20px;
 
-  &:nth-child(2n) {
-    margin-right: 25px;
-  }
-
   &:last-child {
-    margin-right: 0;
+    margin-right: 38px;
   }
 }
 
 .main-nav__link {
   position: relative;
   color: #ffffff;
-  padding-top: 14px;
-  padding-right: 26px;
-  padding-bottom: 14px;
+  padding-top: 7px;
+  padding-right: 10px;
+  padding-bottom: 7px;
   padding-left: 25px;
 
   &:hover {
@@ -85,7 +81,7 @@
 
 .main-nav__icon {
   position: absolute;
-  top: 16px;
+  top: 9px;
   left: -13px;
   fill: none;
   stroke: #00b2ff;

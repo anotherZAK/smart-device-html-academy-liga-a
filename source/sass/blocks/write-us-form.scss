@@ -93,6 +93,22 @@
         background-color: transparent;
         cursor: pointer;
 
+        &:hover,
+        &:focus {
+          &::before,
+          &::after {
+            opacity: 0.7;
+            background-color: #1b2d37;
+          }
+        }
+
+        &:active {
+          &::before,
+          &::after {
+            opacity: 0.4;
+          }
+        }
+
         &::before,
         &::after {
           position: absolute;
@@ -111,6 +127,14 @@
 
         &::after {
           transform: rotate(-45deg);
+        }
+      }
+
+      &--close + label {
+        &:hover,
+        &:focus {
+          opacity: 0.7;
+          cursor: pointer;
         }
       }
     }
@@ -179,8 +203,15 @@
 
 .write-us-form__submit label {
   position: relative;
-  padding-top: 5px;
+  padding-top: 7px;
+  line-height: 17px;
   color: #ffffff;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+    cursor: pointer;
+  }
 }
 
 .write-us-form__tick {
@@ -303,6 +334,10 @@
     min-height: 162px;
   }
 
+  .write-us-form__submit {
+    padding-top: 3px;
+  }
+
   .write-us-form__submit button {
     padding-right: 46px;
     padding-left: 46px;
@@ -332,9 +367,11 @@
 
   .write-us-form__submit {
     flex-direction: column;
+    padding-top: 0;
   }
 
   .write-us-form__submit button {
+    margin-right: 0;
     margin-bottom: 21px;
     min-width: 290px;
   }

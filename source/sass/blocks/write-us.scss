@@ -1,7 +1,7 @@
 .write-us {
   position: relative;
   padding-top: 91px;
-  padding-bottom: 110px;
+  padding-bottom: 113px;
 
   &::before {
     position: absolute;
@@ -62,7 +62,7 @@
 @media (max-width: $mobile-width) {
   .write-us {
     padding-top: 30px;
-    padding-bottom: 33px;
+    padding-bottom: 42px;
   }
 
   .write-us h3 {

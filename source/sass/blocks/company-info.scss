@@ -222,7 +222,8 @@
 
     &--consult {
       display: block;
-      margin-left: 0;
+      max-width: 290px;
+      margin: 0 auto;
       padding-right: 34px;
       padding-left: 33px;
     }

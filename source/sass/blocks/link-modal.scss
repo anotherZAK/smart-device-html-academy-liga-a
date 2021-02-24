@@ -1,5 +1,10 @@
 .link-modal {
   &--callback {
+    align-self: flex-start;
+    margin-top: 4px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    min-width: 179px;
     font-family: $second-font;
     font-weight: 700;
     font-size: 14px;
