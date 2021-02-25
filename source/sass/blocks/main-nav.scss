@@ -7,24 +7,19 @@
 }
 
 .main-nav__logo {
-  display: flex;
   margin-right: auto;
   padding-left: 13px;
   min-width: 230px;
 }
 
+.main-nav__logo img {
+  &:last-child {
+    display: none;
+  }
+}
+
 .main-nav img {
   height: fit-content;
-}
-
-.main-nav__logo div {
-  padding-top: 6px;
-  padding-left: 16px;
-}
-
-.main-nav__logo p {
-  margin: 0;
-  line-height: 0;
 }
 
 .main-nav__logo-title {
@@ -167,12 +162,18 @@
     min-width: fit-content;
   }
 
+  .main-nav__logo img {
+    &:first-child {
+      display: none;
+    }
+
+    &:last-child {
+      display: block;
+    }
+  }
+
   .main-nav img {
     width: 38px;
     height: 38px;
-  }
-
-  .main-nav__logo div {
-    display: none;
   }
 }
