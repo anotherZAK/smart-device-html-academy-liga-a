@@ -6,16 +6,17 @@
   &::before {
     position: absolute;
     content: "";
-    right: 664px;
-    top: 59px;
-    width: 706px;
-    height: 544px;
+    right: 570px;
+    top: 9%;
+    width: 67.3%;
+    height: 81%;
     background-image: url("../img/png/bg-airplane-desktop@1x.png");
     background-repeat: no-repeat;
+    background-size: contain;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/png/bg-airplane-desktop@2x.png");
-      background-size: 706px 544px;
+      background-size: contain;
     }
   }
 }

@@ -41,10 +41,11 @@
     if (storageName) {
       userName.value = storageName;
       userPhone.focus();
-    }
-    if (storagePhone) {
+    } else if (storagePhone) {
       userPhone.value = storagePhone;
       userMessage.focus();
+    } else {
+      userName.focus();
     }
 
     document.addEventListener('click', overlayClickHandle);

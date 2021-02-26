@@ -42,7 +42,7 @@
               </a>
             </li>
           </ul>
-          <a class="main-nav__link link-modal link-modal--callback" tabindex="0">Заказать звонок</a>
+          <a class="main-nav__link link-modal link-modal--callback" href="write-us.html" tabindex="0">Заказать звонок</a>
         </nav>
         <section class="company-info">
           <div class="company-info__description">
@@ -219,17 +219,17 @@
             <h3>Остались вопросы? Задайте их нам!</h3>
             <p>Мы проконсультируем Вас бесплатно</p>
             <div class="write-us-form__field">
-              <label>
+              <label><span class="visually-hidden">Ваше имя</span>
                 <input id="write-us-form-user-name-id" type="text" name="write-us-form-user-name" placeholder="Имя"
                   required>
               </label>
-              <label>
+              <label><span class="visually-hidden">Ваш телефон</span>
                 <input id="write-us-form-user-tel-id" type="tel" name="write-us-form-user-tel"
                   pattern="[\+][7]{1}[\(][0-9]{3}[\)][0-9]{3}[\-][0-9]{2}[\-][0-9]{2}|[8]{1}[\(][0-9]{3}[\)][0-9]{3}[\-][0-9]{2}[\-][0-9]{2}"
                   title="+X(XXX)XXX-XX-XX" placeholder="Телефон" required>
               </label>
             </div>
-            <label>
+            <label><span class="visually-hidden">Ваш вопрос</span>
               <textarea id="write-us-form-question-id" name="write-us-form-question"
                 placeholder="Ваш вопрос"></textarea>
             </label>
@@ -356,13 +356,13 @@
       <h3>Закажите звонок</h3>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <div class="write-us-form__field write-us-form__field--modal">
-        <label>
+        <label><span class="visually-hidden">Ваше имя</span>
           <input id="modal-form-user-name-id" type="text" name="modal-form-user-name" placeholder="Имя" required>
         </label>
-        <label>
+        <label><span class="visually-hidden">Ваш телефон</span>
           <input id="modal-form-user-tel-id" type="tel" name="modal-form-user-tel" placeholder="Телефон" required>
         </label>
-        <label>
+        <label><span class="visually-hidden">Ваш вопрос</span>
           <textarea id="modal-form-question-id" name="modal-form-question" placeholder="Ваш вопрос"></textarea>
         </label>
         <button class="write-us-form__field-button write-us-form__field-button--submit" type="submit">Отправить</button>
@@ -379,7 +379,7 @@
       </div>
     </form>
   </section>
-  <script src="js/modal.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

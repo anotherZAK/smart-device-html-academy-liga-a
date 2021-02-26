@@ -64,16 +64,17 @@ img {
   .write-us::before {
     position: absolute;
     content: "";
-    right: 664px;
-    top: 59px;
-    width: 706px;
-    height: 544px;
+    right: 570px;
+    top: 9%;
+    width: 67.3%;
+    height: 81%;
     background-image: url("../img/png/bg-airplane-desktop@1x.png");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: contain; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
       .write-us::before {
         background-image: url("../img/png/bg-airplane-desktop@2x.png");
-        background-size: 706px 544px; } }
+        background-size: contain; } }
 
 .write-us h3 {
   margin: 0;
@@ -1066,12 +1067,12 @@ img {
 
 @media (max-width: 1023px) {
   .main-nav {
-    margin-bottom: 116px;
+    margin-bottom: 109px;
     padding-top: 20px; }
   .main-nav__logo {
     padding-left: 0; }
   .main-nav__list {
-    padding-top: 10px; }
+    padding-top: 2px; }
   .main-nav__item {
     margin-right: 0; }
     .main-nav__item:nth-child(2n) {
@@ -1118,7 +1119,11 @@ img {
     display: block; }
   .main-nav img {
     width: 38px;
-    height: 38px; } }
+    height: 38px; }
+  .main-nav__icon {
+    top: 7px; }
+    .main-nav__icon--phone {
+      top: 5px; } }
 
 .link-modal--callback {
   -ms-flex-item-align: start;

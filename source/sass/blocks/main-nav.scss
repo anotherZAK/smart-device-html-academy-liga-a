@@ -88,7 +88,7 @@
 
 @media (max-width: $tablet-width) {
   .main-nav {
-    margin-bottom: 116px;
+    margin-bottom: 109px;
     padding-top: 20px;
   }
 
@@ -97,7 +97,7 @@
   }
 
   .main-nav__list {
-    padding-top: 10px;
+    padding-top: 2px;
   }
 
   .main-nav__item {
@@ -175,5 +175,13 @@
   .main-nav img {
     width: 38px;
     height: 38px;
+  }
+
+  .main-nav__icon {
+    top: 7px;
+
+    &--phone {
+      top: 5px;
+    }
   }
 }
