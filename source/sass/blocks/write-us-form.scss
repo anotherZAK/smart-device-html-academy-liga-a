@@ -66,6 +66,7 @@
 
     .write-us-form__field-button {
       &--submit {
+        margin-bottom: 32px;
         padding-top: 14px;
         padding-right: 40px;
         padding-bottom: 14px;
@@ -87,7 +88,7 @@
       &--close {
         position: relative;
         padding: 16px;
-        top: -492px;
+        top: -557px;
         left: 216px;
         border: none;
         background-color: transparent;
@@ -185,6 +186,7 @@
   color: #ffffff;
   background-color: #19baff;
   border: none;
+  border-radius: 0;
   opacity: 1;
 
   &::placeholder {
@@ -229,8 +231,10 @@
 }
 
 .write-us-form__submit input:hover ~ .write-us-form__agree::before,
-.filter-checkbox__data:focus ~ .write-us-form__agree::before {
-  border-color: #ffffff;
+.write-us-form__submit input:focus ~ .write-us-form__agree::before,
+.write-us-form__field--modal input[type="checkbox"]:hover ~ .write-us-form__agree::before,
+.write-us-form__field--modal input[type="checkbox"]:focus ~ .write-us-form__agree::before {
+  box-shadow: 0 0 2px 2px #1b2d37;
 }
 
 .write-us-form__submit input:active + .write-us-form__tick,
@@ -257,7 +261,7 @@
   &--modal {
     display: block;
     margin-top: 3px;
-    margin-left: 18px;
+    margin-left: 32px;
     width: 75%;
     color: #ffffff;
 
@@ -270,6 +274,10 @@
       height: 16px;
       border: 1px solid #ffffff;
     }
+  }
+
+  &--modal-blank {
+    margin-left: 18px;
   }
 }
 
