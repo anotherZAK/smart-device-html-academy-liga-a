@@ -256,6 +256,7 @@ img {
   color: #ffffff;
   background-color: #19baff;
   border: none;
+  border-radius: 0;
   opacity: 1; }
   .write-us-form__field input::-webkit-input-placeholder,
   .write-us-form textarea::-webkit-input-placeholder {
